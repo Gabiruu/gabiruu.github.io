@@ -1,23 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html>
-	
-	<html lang="pt-br">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+	 <link rel="stylesheet" href="css/bootstrap.css" >
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
 
-		<head>
+	<!-- Optional theme -->
+ 
+	<!-- Latest compiled and minified JavaScript -->
+	 <link rel="stylesheet" href="js/bootstrap.js" >
 
-		<meta charset="utf-8"/>
+   <link rel="stylesheet" href="css/pages.css" >
 
-		<title>HTML5 – Estrutura básica</title>
+      
 
-		</head>
+    <title>MESA DE SOM</title>
+  </head>
+  <body>
 
+    <div class="container b-red m-t-40">
+        <span class="btn-onOff glyphicon glyphicon-off"></span>
+        
+        <span id="btn1" class="btn-plus glyphicon glyphicon-plus f-right"><p class="inline-block">ENTRADA</p></span>  
+
+        <div class="row"> 
+
+
+          <div class="container b-red m-t-40 p-r-20 p-l-20">
+
+            <div class="m-t-40" >
+              <form action="/action_page.php"
+              oninput="x.value=parseInt(a.value)">
+              <div class="col-md-6 form-group"> 
+
+                <p class="inline-block range-0 f-left">0</p>
+                <input type="range" class="col-md-9 inline-block w-60 no-padding" id="a" name="a" value="50">
+                <p class="inline-block range-100"> 100 </p>
+                <!--    <input type="number" id="b" name="b" value="50"> -->
+
+                <p class="inline-block f-right volume">volume <output class="inline-block col-md-1 txt-basico f-right" name="x" for=""></output></p>
+
+              </div>
+            </form>
+
+            <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)">
+            <div class="col-md-6 form-group"> 
+
+              <p class="inline-block range-0 f-left">0</p>
+              <input type="range" class="col-md-9 inline-block w-60 no-padding" id="a" name="a" min="0" max="200" value="100">
+              <p class="inline-block range-100"> 200 </p>
+              <!--    <input type="number" id="b" name="b" value="50"> -->
+
+              <p class="inline-block f-right volume">Balanço <output class="inline-block col-md-1 txt-basico f-right" name="x" for=""></output></p>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container b-red  p-r-20 p-l-20">
+
+            <div class="m-t-40" >
+              <form action="/action_page.php"
+              oninput="x.value=parseInt(a.value)">
+              <div class="col-md-6 form-group"> 
+
+                <p class="inline-block range-0 f-left">0</p>
+                <input type="range" class="col-md-9 inline-block w-60 no-padding" id="a" name="a" value="50">
+                <p class="inline-block range-100"> 100 </p>
+                <!--    <input type="number" id="b" name="b" value="50"> -->
+
+                <p class="inline-block f-right volume">Agudo <output class="inline-block col-md-1 txt-basico f-right" name="x" for=""></output></p>
+
+              </div>
+            </form>
+
+            <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)">
+              <div class="col-md-6 form-group"> 
+
+              <p class="inline-block range-0 f-left">0</p>
+              <input type="range" class="col-md-9 inline-block w-60 no-padding" id="a" name="a" value="50">
+              <p class="inline-block range-100"> 100 </p>
+              <!--    <input type="number" id="b" name="b" value="50"> -->
+
+              <p class="inline-block f-right volume">Grave <output class="inline-block col-md-1 txt-basico f-right" name="x" for=""></output></p>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      
+    </div> 
+
+
+
+    </div>
+   
+    <!-- <button onclick="myFunction()">Try it</button>
+
+    <script>
+      function myFunction() {
+        var btn = document.createElement("BUTTON");
+        var t = document.createTextNode("CLICK ME");
+        btn.appendChild(t);
+        document.body.appendChild(btn);
+      }
+      </script>  	  -->
+      <div id="input"></div>  
+
+      <script>
+$(document).ready(function(){
+
+    $("#btn1").click(function(){
+         $("#input").append( "\
+    <div class='container b-red m-t-10'>\
+        <span class='btn-onOff glyphicon glyphicon-off'></span>\
+        <span id='btn2' class='btn-plus glyphicon glyphicon-plus f-right'><p class='inline-block'>ENTRADA</p></span>  \
+        <div class='row'> \
+          <div class='container b-red m-t-40 p-r-20 p-l-20'>\
+            <div class='m-t-40' >\
+              <form action='/action_page.php'\
+              oninput='x.value=parseInt(a.value)'>\
+              <div class='col-md-6 form-group'> \
+                <p class='inline-block range-0 f-left'>0</p>\
+                <input type='range' class='col-md-9 inline-block w-60 no-padding' id='a' name='a' value='50'>\
+                <p class='inline-block range-100'> 100 </p>\
+                <!--    <input type='number' id='b' name='b' value='50'> -->\
+                <p class='inline-block f-right volume'>volume <output class='inline-block col-md-1 txt-basico f-right' name='x' for=''></output></p>\
+              </div>\
+            </form>\
+            <form action='/action_page.php'\
+            oninput='x.value=parseInt(a.value)'>\
+            <div class='col-md-6 form-group'> \
+              <p class='inline-block range-0 f-left'>0</p>\
+              <input type='range' class='col-md-9 inline-block w-60 no-padding' id='a' name='a' min='0' max='200' value='100'>\
+              <p class='inline-block range-100'> 200 </p>\
+              <!--    <input type='number' id='b' name='b' value='50'> -->\
+              <p class='inline-block f-right volume'>Balanço <output class='inline-block col-md-1 txt-basico f-right' name='x' for=''></output></p>\
+            </div>\
+          </form>\
+        </div>\
+      </div>\
+      <div class='container b-red  p-r-20 p-l-20'>\
+            <div class='m-t-40' >\
+              <form action='/action_page.php'\
+              oninput='x.value=parseInt(a.value)'>\
+              <div class='col-md-6 form-group'> \
+                <p class='inline-block range-0 f-left'>0</p>\
+                <input type='range' class='col-md-9 inline-block w-60 no-padding' id='a' name='a' value='50'>\
+                <p class='inline-block range-100'> 100 </p>\
+                <!--    <input type='number' id='b' name='b' value='50'> -->\
+                <p class='inline-block f-right volume'>Agudo <output class='inline-block col-md-1 txt-basico f-right' name='x' for=''></output></p>\
+              </div>\
+            </form>\
+            <form action='/action_page.php'\
+            oninput='x.value=parseInt(a.value)'>\
+              <div class='col-md-6 form-group'> \
+              <p class='inline-block range-0 f-left'>0</p>\
+              <input type='range' class='col-md-9 inline-block w-60 no-padding' id='a' name='a' value='50'>\
+              <p class='inline-block range-100'> 100 </p>\
+              <!--    <input type='number' id='b' name='b' value='50'> -->\
+              <p class='inline-block f-right volume'>Grave <output class='inline-block col-md-1 txt-basico f-right' name='x' for=''></output></p>\
+            </div>\
+          </form>\
+        </div>\
+      </div>\
+    </div> \
+</div>"); 
+      });
+});
+</script>
+</head>
 <body>
-	<h1>gabiru .asdf asdh fas</h1>
-
-	<p>Teste 002</p>
 
 
 
-</body>
+	 				
+	
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
 </html>
