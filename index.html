@@ -19,15 +19,29 @@
    <link rel="stylesheet" href="css/pages.css" >
 
       
+   <script src="js/bootstrap.js" ></script>
+
+      
 
     <title>MESA DE SOM</title>
   </head>
   <body>
+<div class="col-md-12 abd">
+<div class="col-md-4 col-md-offset-1">    
+    <div class="switch__container">
+      <p class="inline-block f-left">Liga e Desliga a Energia</p>
+      <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+       <label class="inline-block btn-ios" for="switch-shadow"></label>
+    </div></div>
+</div>    
+<div class="clearfix"></div>
 
     <div class="container b-red m-t-40">
         <span class="btn-onOff glyphicon glyphicon-off"></span>
         
-        <span id="btn1" class="btn-plus glyphicon glyphicon-plus f-right"><p class="inline-block">ENTRADA</p></span>  
+        <span   class="btn-plus glyphicon glyphicon-plus f-right"
+         type="button"  data-toggle="modal" data-target="#myModal"
+        ><p class="inline-block">ENTRADA</p></span>  
 
         <div class="row"> 
 
@@ -105,6 +119,45 @@
 
     </div>
    
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark b-red">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Preencha os Campos para criar uma nova Entrada </h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="nome" >Nome:</label>
+          <input id="nome" type="text" class="form-control" >
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <select class="form-control" id="tipo">
+            <option>Vocal</option>
+            <option>Instrumento</option>
+            <option>Captação</option>
+            <option>Externo</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" id="btn1" data-dismiss="modal" class="btn btn-primary"> <span class="glyphicon glyphicon-plus f-left"></span> Entrada</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
     <!-- <button onclick="myFunction()">Try it</button>
 
     <script>
@@ -121,10 +174,14 @@
 $(document).ready(function(){
 
     $("#btn1").click(function(){
+     var nome = document.getElementById("nome").value;
+     var tipo = document.getElementById("tipo").value;
+     console.log("Nome: " + nome);
+     console.log("tipo " + tipo);
          $("#input").append( "\
     <div class='container b-red m-t-10'>\
-        <span class='btn-plus glyphicon glyphicon-music'><p class='f-right'>Nova_entrada</p></span>\
-        <span class='btn-plus glyphicon glyphicon-play-circle'><p class='f-right'>Microfone</p></span>\
+        <span class='btn-plus glyphicon glyphicon-music'><p class='f-right'>"+nome+"</p></span>\
+        <span class='btn-plus glyphicon glyphicon-play-circle'><p class='f-right'>"+tipo+"</p></span>\
         <span class='btn-plus glyphicon glyphicon-off'><p class='f-right'>Retorno</p></span>\
         <span class='btn-plus glyphicon glyphicon-off'><p class='f-right'>Output</p></span>\
         <div class='row'> \
@@ -181,20 +238,13 @@ $(document).ready(function(){
       });
 });
 </script>
+  
+
+
 </head>
 <body>
 
-
-
-	 				
-	
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
   </body>
 </html>
 </html>
