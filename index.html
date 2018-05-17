@@ -21,6 +21,45 @@
       
    <script src="js/bootstrap.js" ></script>
 
+   <
+  <script>
+function desligar() {
+   // var element = document.getElementById("teste");
+   var element = document.getElementsByClassName("liga-desliga");
+   // element[0].classList.add("display-none");
+   // ligado = true;
+
+   // if (ligado == true){
+
+    fLen = element.length;
+    for (l = 0; l < fLen; l++) {
+      element[l].classList.toggle("desligar");
+    // element[j].disabled = true;
+    } 
+
+    document.getElementById("eu").classList.toggle("teste2");
+    //}
+    // else{
+    //   fLen = element.length;
+    //   for (l = 0; l < fLen; l++) {
+    //     element[l].classList.remove("desligar");
+    // // element[j].disabled = true;
+    // } 
+    // }
+
+
+   
+}
+
+function desligar2() {
+ desligar();
+ document.getElementById("eu").classList.toggle("teste3");
+ document.getElementById("eu").classList.toggle("desligar");
+}
+
+
+</script>
+      
       
 
     <title>MESA DE SOM</title>
@@ -31,15 +70,15 @@
     <div class="switch__container">
       <p class="inline-block f-left">Liga e Desliga a Energia</p>
       <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-       <label class="inline-block btn-ios" for="switch-shadow"></label>
+       <label onclick="desligar2()" class="inline-block btn-ios" for="switch-shadow"></label>
     </div></div>
 </div>    
 <div class="clearfix"></div>
 
     <div class="container b-red m-t-40">
-        <span class="btn-onOff glyphicon glyphicon-off"></span>
+        <span onclick="desligar()" id="eu" class="btn-onOff glyphicon glyphicon-off c-green abc"></span>
         
-        <span   class="btn-plus glyphicon glyphicon-plus f-right"
+        <span id="teste" class="btn-plus glyphicon glyphicon-plus f-right liga-desliga"
          type="button"  data-toggle="modal" data-target="#myModal"
         ><p class="inline-block">ENTRADA</p></span>  
 
@@ -48,7 +87,7 @@
 
           <div class="container b-red m-t-40 p-r-20 p-l-20">
 
-            <div class="m-t-40" >
+            <div class="m-t-40 liga-desliga" >
               <form action="/action_page.php"
               oninput="x.value=parseInt(a.value)">
               <div class="col-md-6 form-group"> 
@@ -81,7 +120,7 @@
 
       <div class="container b-red  p-r-20 p-l-20">
 
-            <div class="m-t-40" >
+            <div class="m-t-40 liga-desliga" >
               <form action="/action_page.php"
               oninput="x.value=parseInt(a.value)">
               <div class="col-md-6 form-group"> 
@@ -174,13 +213,13 @@ $(document).ready(function(){
      console.log("entrada " + entrada[i]);
      $("#input").append( "\
     <div class='container b-red m-t-10'>\
-        <span class='btn-plus glyphicon glyphicon-music'><p class='f-right'>"+nome+"</p></span>\
-        <span class='btn-plus glyphicon glyphicon-play-circle'><p class='f-right'>"+tipo+"</p></span>\
-        <span class='btn-plus glyphicon glyphicon-off' data-toggle='modal' data-target='#myModal2'><p class='f-right'>Retorno</p></span>\
-        <span class='btn-plus glyphicon glyphicon-off'><p class='f-right'>Output</p></span>\
+        <span class='btn-plus glyphicon glyphicon-music liga-desliga'><p class='f-right'>"+nome+"</p></span>\
+        <span class='btn-plus glyphicon glyphicon-play-circle liga-desliga'><p class='f-right'>"+tipo+"</p></span>\
+        <span class='btn-plus glyphicon glyphicon-off liga-desliga' data-toggle='modal' data-target='#myModal2'><p class='f-right'>Retorno</p></span>\
+        <span class='btn-plus glyphicon glyphicon-off liga-desliga'><p class='f-right'>Output</p></span>\
         <div class='row'> \
           <div class='container b-red m-t-40 p-r-20 p-l-20'>\
-            <div class='m-t-40' >\
+            <div class='m-t-40 liga-desliga' >\
               <form action='/action_page.php'\
               oninput='x.value=parseInt(a.value)'>\
               <div class='col-md-6 form-group'> \
@@ -204,7 +243,7 @@ $(document).ready(function(){
         </div>\
       </div>\
       <div class='container b-red  p-r-20 p-l-20'>\
-            <div class='m-t-40' >\
+            <div class='m-t-40 liga-desliga' >\
               <form action='/action_page.php'\
               oninput='x.value=parseInt(a.value)'>\
               <div class='col-md-6 form-group'> \

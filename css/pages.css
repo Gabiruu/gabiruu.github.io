@@ -268,3 +268,26 @@ padding: 0 6px 0 0;
 .teste{
   min-height: 450px;
 }
+.display-none{
+display:none!important;
+}
+
+.desligar,
+.desligar p
+{
+  pointer-events: none;
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.teste2{
+  color: red!important;
+}
+
+.c-green{
+  color: green;
+}
+
+.teste3{
+  color: #ab5c5c!important;
+}
