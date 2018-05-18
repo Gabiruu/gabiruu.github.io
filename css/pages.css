@@ -212,7 +212,7 @@ font-size: 32px;
   padding: 2px;
   width: 58px;
   height: 30px;
-  background-color: #dddddd;
+  background-color: green;
   border-radius: 30px;
 }
 .switch--shadow + label:before,
@@ -226,7 +226,7 @@ font-size: 32px;
 }
 .switch--shadow + label:before {
   right: 1px;
-  background-color: #f1f1f1;
+  background-color: green;
   border-radius: 30px;
   transition: background 0.4s;
 }
@@ -238,7 +238,7 @@ font-size: 32px;
   transition: all 0.4s;
 }
 .switch--shadow:checked + label:before {
-  background-color: #8ce196;
+  background-color: red;
 }
 .switch--shadow:checked + label:after {
   transform: translateX(30px);
@@ -288,6 +288,11 @@ display:none!important;
   color: green;
 }
 
-.teste3{
+.teste3,
+.teste3 p,
+.teste3 form form-group
+{
   color: #ab5c5c!important;
+  pointer-events: none;
+  cursor: no-drop;
 }
