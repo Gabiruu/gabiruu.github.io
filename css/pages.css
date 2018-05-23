@@ -1,10 +1,11 @@
  
 
 body {
- background: url("bg_mesa.jpg");
+ background: url("bg_mesa2.jpg");
  background-size:cover; 
  min-height: 500px;
 }
+
 
 .bg-dark{
   background: url("bg_mesa.jpg");
@@ -60,15 +61,15 @@ span{
  font-size: 30px;
  color: #Fff;
 }
-
+/*font*/
 p {
- font-family: verdana;
+ font-family: 'Archivo Black', sans-serif;
  font-size: 20px;
  color: #Fff;
 }
-
+/*font*/
  .txt-basico {
- font-family: verdana;
+ font-family: 'Assistant', sans-serif;
  font-size: 20px;
  color: #Fff;
  padding: 0;
@@ -82,6 +83,10 @@ p {
  padding: 15px; 
 }
 
+title{ 
+  font-family: 'Oswald', sans-serif;
+}
+
 
 .barb{
   border: 1px solid #f4f4f4;
@@ -92,9 +97,9 @@ p {
 
 }
 
-
+/*font*/
 .barb p {
-  font-style: 'Arial';
+  font-style: 'Assistant', sans-serif;
   display: inline-block;
   float: right; 
   padding: 4px;
@@ -106,9 +111,12 @@ p {
 .c-black{
   color:#000;
 }
-
+/*style borda*/
 .b-red{
- border:1px solid red;    
+ border: 2px solid #088A08;
+ border-width: 2px;
+
+
 }
 
 output{
@@ -292,7 +300,24 @@ display:none!important;
 .teste3 p,
 .teste3 form form-group
 {
-  color: #ab5c5c!important;
+  color: #000!important;
   pointer-events: none;
   cursor: no-drop;
+}
+
+
+
+.no-pointer{
+  cursor:default!important;
+}
+
+
+.onOf-saida{
+  color: red!important;
+}
+
+
+
+.onOf-retorno{
+
 }
