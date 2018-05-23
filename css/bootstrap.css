@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Assistant', sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -1183,7 +1183,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family:  'Assistant', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -5472,7 +5472,8 @@ button.list-group-item-danger.active:focus {
   margin-bottom: 0;
   font-size: 16px;
   color: inherit;
-}
+ }
+
 .panel-title > a,
 .panel-title > small,
 .panel-title > .small,
@@ -5865,6 +5866,7 @@ button.close {
 }
 .modal-open {
   overflow: hidden;
+  background: url("bg_mesa3.jpg");
 }
 .modal {
   position: fixed;
@@ -5877,6 +5879,7 @@ button.close {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+
 }
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -5941,10 +5944,13 @@ button.close {
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  color: #F5F5DC;
 }
 .modal-body {
   position: relative;
   padding: 15px;
+  color: #F5F5DC;
+
 }
 .modal-footer {
   padding: 15px;
