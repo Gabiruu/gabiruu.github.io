@@ -1,0 +1,65 @@
+h1{
+    color: #595959 !important;
+    font-size: 4.5rem !important;
+}
+p{
+    color: #595959;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+h1 strong{
+    color: #000 !important;
+}
+
+.endereco{
+
+}
+.folha{
+    border: 1px solid black;
+    background-color: fff;
+}
+
+.linha{
+    border-bottom:3px solid #000;
+}
+.links{
+    color: #1D824C;
+    font-weight: bold;
+}
+.linha-pontilhada{
+    border-left:3px dotted grey;
+    padding: 0 2px 0 2px;
+}
+
+.info-periodo{
+    font-size: 0.8em;
+    font-weight: bold ;
+}
+
+.info-local{
+    font-size: 1em;
+}
+
+.info-local strong{
+    color: green;
+}
+
+.container-info{
+    max-width:960px !important;
+}
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
