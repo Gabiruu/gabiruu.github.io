@@ -13,8 +13,18 @@ h1 strong{
     color: #000 !important;
 }
 
-.endereco{
 
+.links a{
+    color: #1D824C;
+    font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.links:link, .links:visited, .links a:hover  {
+    text-decoration: none !important;
+    color:#04ad04!important;
+    cursor: pointer !important;
 }
 .folha{
     border: 1px solid black;
@@ -24,10 +34,7 @@ h1 strong{
 .linha{
     border-bottom:3px solid #000;
 }
-.links{
-    color: #1D824C;
-    font-weight: bold;
-}
+
 .linha-pontilhada{
     border-left:3px dotted grey;
     padding: 0 2px 0 2px;
