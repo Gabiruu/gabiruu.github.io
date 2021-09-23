@@ -1,60 +1,61 @@
-h1{
-    color: #595959 !important;
-    font-size: 4.5rem !important;
+h1 {
+  color: #595959 !important;
+  font-size: 4.5rem !important;
 }
-p{
-    color: #595959;
+p {
+  color: #595959;
 }
-body{
-    background-color: blanchedalmond;
-}
-
-h1 strong{
-    color: #000 !important;
+body {
+  background-color: blanchedalmond;
 }
 
-
-.links a{
-    color: #1D824C;
-    font-weight: bold;
-    text-decoration: none !important;
-    cursor: pointer !important;
+h1 strong {
+  color: #000 !important;
 }
 
-.links:link, .links:visited, .links a:hover  {
-    text-decoration: none !important;
-    color:#04ad04!important;
-    cursor: pointer !important;
-}
-.folha{
-    border: 1px solid black;
-    background-color: fff;
+.links a {
+  color: #1d824c;
+  font-weight: bold;
+  text-decoration: none !important;
+  cursor: pointer !important;
 }
 
-.linha{
-    border-bottom:3px solid #000;
+.links:link,
+.links:visited,
+.links a:hover {
+  text-decoration: none !important;
+  color: #04ad04 !important;
+  cursor: pointer !important;
+}
+.folha {
+  border: 1px solid black;
+  background-color: fff;
 }
 
-.linha-pontilhada{
-    border-left:3px dotted grey;
-    padding: 0 2px 0 2px;
+.linha {
+  border-bottom: 3px solid #000;
 }
 
-.info-periodo{
-    font-size: 0.8em;
-    font-weight: bold ;
+.linha-pontilhada {
+  border-left: 3px dotted grey;
+  padding: 0 2px 0 2px;
 }
 
-.info-local{
-    font-size: 1em;
+.info-periodo {
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
-.info-local strong{
-    color: green;
+.info-local {
+  font-size: 1em;
 }
 
-.container-info{
-    max-width:960px !important;
+.info-local strong {
+  color: green;
+}
+
+.container-info {
+  max-width: 960px !important;
 }
 
 /*
@@ -70,3 +71,6 @@ h1 strong{
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+@media (min-width: 768px) {
+  font-size: 2.5rem;
+}
