@@ -2,9 +2,6 @@
 
 <div align="center">
 
-![metaImg](https://user-images.githubusercontent.com/38928677/134745841-a88048ad-eff7-4381-b6ca-4192320e6b48.JPG)
-
- 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Gabiruu/gabiruu.github.io?color=GREEN)
 ![Badge](https://img.shields.io/badge/HTML-5-blue)
 ![Badge](https://img.shields.io/badge/CSS-3-blue)
